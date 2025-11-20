@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button{
+                height:40px;
+                margin-top: 30px;
+                margin-right: 10px;
+                font-size: medium;
+                font-weight: 500;
+            }
+
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                margin-left: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="buttons">
+            <button class="button" onclick="
+                console.log(`Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">Show Quantity</button>
+    
+            <button class="button" onclick="
+                cartQuantity += 1;
+                console.log(`Added to the cart. \n Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">Add to cart</button>
+
+            <button class="button" onclick="
+                cartQuantity += 2;
+                console.log(`Added to the cart. \n Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">+2</button>
+
+            <button class="button" onclick="
+                cartQuantity += 3;
+                console.log(`Added to the cart. \n Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">+3</button>
+
+            <button class="button" onclick="
+                cartQuantity -= 1;
+                console.log(`Removed 1 quantity from cart. \n Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">-1</button>
+
+            <button class="button" onclick="
+                cartQuantity -= cartQuantity;
+                console.log(`Removed all item from cart. \n Quantity: ${cartQuantity} \n Total cost: ${cartQuantity*cost}`);
+            ">Reset</button>
+        </div>
+
+        <script>
+            let cartQuantity = 0;
+            let cost = 5;
+        </script>
+    </body>
+</html>
