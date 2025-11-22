@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Convert</title>
+    </head>
+    <body>
+        <script>
+            tempConvert(25, 'c');
+            tempConvert(86,'f')
+            function tempConvert(value, unit){
+                if(unit === 'c'){
+                    console.log(`${1.8 * value + 32}°F.`);
+                }
+                else if(unit === 'f'){
+                    console.log(`${(value-32)/1.8}°C.`);
+                }
+            }
+        </script>
+    </body>
+</html>
