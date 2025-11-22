@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            const person1 = {
+                name: 'java',
+                age: 20,
+
+                //Object inside object
+                address: {
+                    city: 'Kathmandu',
+                    street: 'Kg road'
+                },
+
+                //function inside object
+                greet: function(){
+                    console.log('hello');
+                }
+            };
+
+            //Conversion of JS objects into JSON string
+            console.log(JSON.stringify(person1)); //Doesn't work for function inside object.
+
+            //Conversion of JSON string into JS objects
+            const person2 = '{"name":"Doom","age":32,"address":{"city":"Bhaktapur","street":"square marg"}}';
+            console.log(JSON.parse(person2));
+
+        </script>
+    </body>
+</html>

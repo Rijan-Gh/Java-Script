@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: 'java',
+                age: 20,
+
+                //Object inside object
+                address: {
+                    city: 'Kathmandu',
+                    street: 'Kg road'
+                },
+
+                //function inside object
+                greet: function(){
+                    console.log('hello');
+                }
+            };
+            console.log(person);
+            console.log(person.name);
+            console.log(person['name']);
+            console.log(person.address.city);
+            console.log(person.address['street']);
+            person.greet();
+        </script>
+    </body>
+</html>
