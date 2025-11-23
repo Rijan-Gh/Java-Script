@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head><title>DOM Practice</title></head>
+    <body>
+        <button>Hello!</button>
+        <button class="js-button">Nice</button>
+        <script>
+
+            console.log(document.querySelector('button').innerHTML);
+            document.querySelector('button').innerHTML = 'Changed!';
+
+            const buttonElement = document.querySelector('.js-button').innerHTML = 'Nice one!';   
+            console.log(buttonElement);
+
+            /*
+            console.log(document.body);
+            console.log(typeof document.body);
+            console.log(document.body.innerHTML);
+            document.body.innerHTML = '<button>Good JOb!</button>';
+            */
+        </script>
+    </body>
+</html>
