@@ -25,17 +25,20 @@
             </div>
         </div>
 
-        <p class="js-result"></p>
-        <p class="js-moves"></p>
-        <p class="js-score score"></p>
+        <div class="score-board">
+            <p class="js-result"></p>
+            <p class="js-moves"></p>
+            <p class="js-score score"></p>
 
-        <button class="reset-button" onclick="
-            score.wins = 0;
-            score.losses = 0;
-            score.ties = 0;
-            updateScoreElement();
-            localStorage.removeItem('score');
-        ">Reset Score</button>
+            <button class="reset-button" onclick="
+                score.wins = 0;
+                score.losses = 0;
+                score.ties = 0;
+                updateScoreElement();
+                localStorage.removeItem('score');
+            ">Reset Score</button>
+        </div>
+
 
 
         <script>
